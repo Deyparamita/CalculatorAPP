@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( -45deg,red,orange,yellow);
+}
+
+.calculator{
+background: #ef0505;
+/* background-color: #ec0c0c; */
+padding: 20px;
+border-radius: 20px;
+box-shadow: 10px 10px 10px rgb(146, 8, 8);
+}
+
+input{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 30px;
+    box-shadow: 2px 2px 4px 4px rgb(146, 8, 8);
+    background: transparent;
+}
+
+form .dis{
+    /* width: 120px; not work here */
+    margin: 20px 0;  /* top and bottom 20px nd left-right=0 */
+    display: flex; /* use this so that flex 1 can be used in input*/
+    /* justify-content: flex-end;  */
+}
+
+form .dis input{
+    /* width: 300px; use it if display flex is not written on the parent */
+    flex: 1; /* better to use this flex property as it denotes full width. we do not have to adjust the width*/
+    text-align: right;
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.equalto{
+    width: 145px;
+}
+
+.operator{
+    color: rgb(106, 208, 240);
+}
